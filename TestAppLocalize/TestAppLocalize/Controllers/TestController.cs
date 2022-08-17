@@ -37,7 +37,7 @@ namespace TestAppLocalize.Controllers
         ModelState.AddModelError(nameof(inputModel.Nickname), "Nickname is required");
       }
 
-      if (inputModel.Nickname.Length > 10)
+      if (inputModel.Nickname.Length > 30)
       {
         ModelState.AddModelError(nameof(inputModel.Nickname), "Nickname is to long");
       }

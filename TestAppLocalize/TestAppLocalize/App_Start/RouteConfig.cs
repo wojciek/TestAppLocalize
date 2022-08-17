@@ -18,7 +18,7 @@ namespace TestAppLocalize
           url: "",
           defaults: new
           {
-            culture = @"pl-PL",
+            culture = "pl-PL",
             controller = "Base",
             action = "RedirectToLocalized"
           }

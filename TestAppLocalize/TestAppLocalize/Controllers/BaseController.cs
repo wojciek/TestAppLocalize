@@ -12,13 +12,13 @@ namespace TestAppLocalize.Controllers
       //                    ?? "pl-PL";
       object cultureParam = null;
 
-      filterContext.ActionParameters.TryGetValue("culture", out cultureParam).ToString();
+      filterContext.ActionParameters.TryGetValue("language", out cultureParam).ToString();
       var culture = "pl-PL";
       if (cultureParam != null) { 
         culture = cultureParam as string;
       }
 
-      filterContext.ActionParameters["language"] = culture;
+      filterContext.ActionParameters["culture"] = culture;
       var cultureInfo = CultureInfo.GetCultureInfo(culture);
       Thread.CurrentThread.CurrentCulture = cultureInfo;
       Thread.CurrentThread.CurrentUICulture = cultureInfo;
