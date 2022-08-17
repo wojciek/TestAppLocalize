@@ -5,11 +5,10 @@ namespace TestAppLocalize.Models
 {
   public class TestFormModel
   {
-    //[Required(ErrorMessage = "Nickname is required")]
     [Required(ErrorMessageResourceType = typeof(Resources.ResourcesTexts), ErrorMessageResourceName= "nicknameRequired")]
     [Display(Name = "nickname", ResourceType = typeof(Resources.ResourcesTexts))]
-    [RegularExpression(@"^[a-zA-Z]+$", ErrorMessage = "Use letters only please")]
-    [MaxLength(30, ErrorMessage = "{0} cannot be greater than {1}")]
+    [RegularExpression(@"^[a-zA-Z]+$", ErrorMessageResourceName = "useOnlyLetters", ErrorMessageResourceType = typeof(Resources.ResourcesTexts))]
+    [MaxLength(30, ErrorMessageResourceName = "nicknameTooLong", ErrorMessageResourceType = typeof(Resources.ResourcesTexts))]
     public string Nickname { get; set; }
 
     [Required(ErrorMessage = "Email Address Id Required")]

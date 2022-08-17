@@ -129,4 +129,19 @@
   <data name="nicknameRequired" xml:space="preserve">
     <value>Nickname is required</value>
   </data>
+  <data name="emailRequired" xml:space="preserve">
+    <value>Email address is required</value>
+  </data>
+  <data name="emailInvalid" xml:space="preserve">
+    <value>Invalid Email address format</value>
+  </data>
+  <data name="testConfirm" xml:space="preserve">
+    <value>Confirm test form</value>
+  </data>
+  <data name="nicknameTooLong" xml:space="preserve">
+    <value>{0} cannot be greater than {1}</value>
+  </data>
+  <data name="useOnlyLetters" xml:space="preserve">
+    <value>Use letters only please</value>
+  </data>
 </root>

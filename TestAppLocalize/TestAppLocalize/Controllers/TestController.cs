@@ -39,7 +39,7 @@ namespace TestAppLocalize.Controllers
 
       if (inputModel.Nickname.Length > 30)
       {
-        ModelState.AddModelError(nameof(inputModel.Nickname), "Nickname is to long");
+        ModelState.AddModelError(nameof(inputModel.Nickname), Resources.ResourcesTexts.nicknameTooLong);
       }
 
       if (!String.IsNullOrEmpty(inputModel.Email))
@@ -50,12 +50,12 @@ namespace TestAppLocalize.Controllers
         Regex re = new Regex(emailRegex);
         if (!re.IsMatch(inputModel.Email))
         {
-          ModelState.AddModelError(nameof(inputModel.Email), "Email is not valid");
+          ModelState.AddModelError(nameof(inputModel.Email), Resources.ResourcesTexts.emailInvalid);
         }
       }
       else
       {
-        ModelState.AddModelError(nameof(inputModel.Email), "Email is required");
+        ModelState.AddModelError(nameof(inputModel.Email), Resources.ResourcesTexts.emailRequired);
       }
 
       if (ModelState.IsValid)

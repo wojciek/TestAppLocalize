@@ -79,6 +79,24 @@ namespace TestAppLocalize.Resources {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Invalid Email address format.
+        /// </summary>
+        public static string emailInvalid {
+            get {
+                return ResourceManager.GetString("emailInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Email address is required.
+        /// </summary>
+        public static string emailRequired {
+            get {
+                return ResourceManager.GetString("emailRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nickname.
         /// </summary>
         public static string nickname {
@@ -93,6 +111,33 @@ namespace TestAppLocalize.Resources {
         public static string nicknameRequired {
             get {
                 return ResourceManager.GetString("nicknameRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu {0} cannot be greater than {1}.
+        /// </summary>
+        public static string nicknameTooLong {
+            get {
+                return ResourceManager.GetString("nicknameTooLong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Confirm test form.
+        /// </summary>
+        public static string testConfirm {
+            get {
+                return ResourceManager.GetString("testConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Use letters only please.
+        /// </summary>
+        public static string useOnlyLetters {
+            get {
+                return ResourceManager.GetString("useOnlyLetters", resourceCulture);
             }
         }
     }
