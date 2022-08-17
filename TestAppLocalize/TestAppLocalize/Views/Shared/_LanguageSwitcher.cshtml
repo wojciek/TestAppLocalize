@@ -1,0 +1,4 @@
+﻿<ul class="nav navbar-nav navbar-right">
+   <li>@Html.ActionLink("Polski", ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { culture = "pl-PL"}, null)</li>
+   <li>@Html.ActionLink("English", ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { culture = "en-GB" }, null)</li>
+</ul>
