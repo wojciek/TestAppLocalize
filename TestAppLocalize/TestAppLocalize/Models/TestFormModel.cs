@@ -5,7 +5,8 @@ namespace TestAppLocalize.Models
 {
   public class TestFormModel
   {
-    [Required(ErrorMessage = "Nickname is required")]
+    //[Required(ErrorMessage = "Nickname is required")]
+    [Required(ErrorMessageResourceType = typeof(Resources.ResourcesTexts), ErrorMessageResourceName= "nicknameRequired")]
     [Display(Name = "nickname", ResourceType = typeof(Resources.ResourcesTexts))]
     [RegularExpression(@"^[a-zA-Z]+$", ErrorMessage = "Use letters only please")]
     [MaxLength(30, ErrorMessage = "{0} cannot be greater than {1}")]

@@ -86,5 +86,14 @@ namespace TestAppLocalize.Resources {
                 return ResourceManager.GetString("nickname", resourceCulture);
             }
         }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nickname is required.
+        /// </summary>
+        public static string nicknameRequired {
+            get {
+                return ResourceManager.GetString("nicknameRequired", resourceCulture);
+            }
+        }
     }
 }

@@ -34,7 +34,7 @@ namespace TestAppLocalize.Controllers
     {
       if (String.IsNullOrEmpty(inputModel.Nickname))
       {
-        ModelState.AddModelError(nameof(inputModel.Nickname), "Nickname is required");
+        ModelState.AddModelError(nameof(inputModel.Nickname), Resources.ResourcesTexts.nicknameRequired);
       }
 
       if (inputModel.Nickname.Length > 30)

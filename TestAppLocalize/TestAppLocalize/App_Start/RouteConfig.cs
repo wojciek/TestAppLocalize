@@ -28,7 +28,7 @@ namespace TestAppLocalize
           url: "{culture}/{controller}/{action}/{id}",
           defaults: new
           {
-            culture = @"pl-PL",
+
             controller = "Test",
             action = "Index",
             id = UrlParameter.Optional
